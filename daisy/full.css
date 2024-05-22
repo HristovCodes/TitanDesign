@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     color-scheme: light;
     --in: 72.06% 0.191 231.6;
@@ -2149,7 +2151,7 @@
     --btn-focus-scale: 0.95;
     --border-btn: 1px;
     --tab-border: 1px;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-family: "Open Sans", sans-serif;
     --p: 57.95% 0.226 26.84; /* primary color */
     --s: 50.62% 0.206 26.86; /* svgs color */
     --a: 20.95% 0.085 26.34;
@@ -2194,7 +2196,7 @@
     --btn-focus-scale: 0.95;
     --border-btn: 1px;
     --tab-border: 1px;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-family: "Open Sans", sans-serif;
     --p: 65.86% 0.223 26.99; /* primary color */
     --s: 50.62% 0.206 26.86; /* svgs color */
     --a: 71.86% 0.2176 310.43;
