@@ -1,0 +1,73 @@
+#property-custom-gallery-controls-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #property-custom-gallery-controls-dots .property-custom-dot {
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767.98px) {
+    #property-custom-gallery-controls-dots .property-custom-dot {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    #property-custom-gallery-controls-dots .property-custom-dot {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  #property-custom-gallery-controls-dots .property-custom-dot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    object-fit: cover;
+  }
+  
+  #property-custom-gallery-controls .property-custom-prev,
+  #property-custom-gallery-controls .property-custom-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  #property-custom-gallery-controls .property-custom-prev {
+    left: 8px;
+  }
+  
+  #property-custom-gallery-controls .property-custom-next {
+    right: 8px;
+  }
+  
+  #property-custom-gallery > * {
+    height: 600px;
+    display: none;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+  }
+
+  #property-custom-gallery-controls {
+    position: relative;
+  }

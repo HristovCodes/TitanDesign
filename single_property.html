@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme">
+  <head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8" />
+    <title>Titan Properties Real Estate</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--=============== css  ===============-->
+    <link href="daisy/full.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="daisy/tailwind.js"></script>
+  </head>
+
+  <body>
+    <!-- Start nav bar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a onclick="my_modal_33.showModal()">Закупуване на имот</a></li>
+            <li><a onclick="my_modal_33.showModal()">Наемане на имот</a></li>
+            <li><a onclick="my_modal_33.showModal()">Нови сгради</a></li>
+            <li><a href="aboutus.html">За нас</a></li>
+            <li><a href="news.html">Статии</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="career.html">Кариера при нас</a></li>
+            <li>
+              <label class="label cursor-pointer">
+                <span class="label-text">BG</span>
+                <input type="checkbox" class="toggle" checked />
+                <span class="label-text">EN</span>
+              </label>
+              <a class="btn btn-primary" href="ocenka.html">Оценка на имот</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl" href="index.html"
+          ><img class="h-full" src="images/logo-dark.png"
+        /></a>
+      </div>
+      <div class="navbar-center hidden xl:flex z-10">
+        <ul class="menu menu-horizontal px-1">
+          <li><a onclick="my_modal_33.showModal()">Закупуване</a></li>
+          <li><a onclick="my_modal_33.showModal()">Наемане</a></li>
+          <li><a onclick="my_modal_33.showModal()">Нови сгради</a></li>
+          <li><a href="aboutus.html">За нас</a></li>
+          <li><a href="news.html">Статии</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="career.html">Кариера при нас</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden xl:flex">
+        <div class="dropdown">
+          <div class="dropdown dropdown-end mr-4">
+            <div tabindex="0" role="button" class="btn btn-ghost rounded-btn">
+              BG
+            </div>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+            >
+              <li><a>BG</a></li>
+              <li><a>EN</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="ocenka.html" class="btn btn-primary">Оценка на имот</a>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_33" class="modal modal-bottom sm:modal-middle">
+          <div
+            class="modal-box bg-base-100 text-accent w-full max-w-7xl lg:w-11/12"
+          >
+            <form method="dialog">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
+                ✕
+              </button>
+            </form>
+            <h3 class="font-bold text-lg text-center">Имоти за продажба</h3>
+            <p class="py-4 text-center"></p>
+            <form class="flex flex-col gap-8" action="search_properties.html">
+              <div class="join flex-col lg:flex-row justify-center">
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Едностаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Двустаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  checked
+                  aria-label="Тристаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Многостаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Мезонет"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Всички"
+                />
+              </div>
+              <div class="flex flex-wrap justify-between gap-4">
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full xl:max-w-lg"
+                >
+                  Цена от
+                  <input type="text" class="grow" placeholder="0" />
+                </label>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full xl:max-w-lg"
+                >
+                  Цена до
+                  <input type="text" class="grow" placeholder="320000" />
+                </label>
+                <div class="dropdown w-full xl:max-w-lg">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn bg-transparent border input-bordered font-normal w-full xl:max-w-lg flex justify-between"
+                  >
+                    Град<svg
+                      width="12px"
+                      height="12px"
+                      class="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2048 2048"
+                    >
+                      <path
+                        d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full xl:max-w-lg"
+                  >
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                          />
+                          <span class="label-text">София</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                          />
+                          <span class="label-text">Бургас</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                            checked
+                          />
+                          <span class="label-text">Варна</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown w-full xl:max-w-lg">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn bg-transparent border input-bordered font-normal w-full xl:max-w-lg flex justify-between"
+                  >
+                    Район<svg
+                      width="12px"
+                      height="12px"
+                      class="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2048 2048"
+                    >
+                      <path
+                        d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full xl:max-w-lg"
+                  >
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            class="checkbox mr-2"
+                          />
+                          <span class="label-text">Младост</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input type="checkbox" class="checkbox mr-2" />
+                          <span class="label-text">Дианабад</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input type="checkbox" class="checkbox mr-2" />
+                          <span class="label-text">Изток</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full"
+                >
+                  Референтен номер
+                  <input type="text" class="grow" placeholder="2134016" />
+                </label>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Луксозен</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Гараж</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Паркомясто</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Домашни любимци</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Тераса</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">СОТ</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Интернет</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Затворен комплекс</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <label class="label cursor-pointer">
+                  <span class="label-text"
+                    >Получаване на предложения за съответното търсене.</span
+                  >
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-primary"
+                  />
+                </label>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full"
+                >
+                  Email
+                  <input
+                    type="email"
+                    class="grow"
+                    placeholder="example@abv.bg"
+                  />
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Tърсене</button>
+            </form>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+      </div>
+    </div>
+    <!-- End nav bar -->
+
+    <div class="flex flex-col items-center">
+      <div class="w-[85%] my-8 xl:w-[70%]">
+        <div class="flex flex-col items-center gap-4">
+          <!-- <figure class="w-[100%] h-[450px]">
+            <img
+              class="aspect-video object-cover h-full w-full"
+              src="images/news1.jpg"
+              alt="Shoes"
+            />
+          </figure> -->
+          <div class="w-full flex items-center">
+            <h2 class="text-xl w-[50%] xl:text-4xl xl:grow xl:w-auto">
+              Двустаен, продажба, ж.к. Остромила
+            </h2>
+            <div class="text-end grow">
+              <p>€ 129 880</p>
+              <p>€ 1882.31 / m2</p>
+              <p>69 m2</p>
+            </div>
+          </div>
+          <div class="text-sm w-full">
+            <ul class="flex gap-4">
+              <li class="badge badge-primary">Продажба</li>
+              <li class="badge badge-primary">2026 г.</li>
+              <li class="badge badge-primary">АКТ 16</li>
+              <li class="badge badge-primary">ЮГ / ЗАПАД</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="my-8 flex justify-between gap-8 flex-col xl:flex-row xl:gap-0"
+        >
+          <div class="w-full xl:w-[64%] flex flex-col gap-8">
+            <div class="card glass relative" id="galleryTabs">
+              <div
+                class="absolute right-[10%] top-[50px] galleryTabsControls z-[100] flex flex-col gap-2 xl:flex-row xl:right-[7%]"
+              >
+                <div class="btn btn-sm glass">
+                  <svg
+                    class="h-[80%] px-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="16"
+                        cy="8"
+                        r="2"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      ></circle>
+                      <path
+                        d="M2 12.5001L3.75159 10.9675C4.66286 10.1702 6.03628 10.2159 6.89249 11.0721L11.1822 15.3618C11.8694 16.0491 12.9512 16.1428 13.7464 15.5839L14.0446 15.3744C15.1888 14.5702 16.7369 14.6634 17.7765 15.599L21 18.5001"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="px-1">Галерия</p>
+                </div>
+                <div class="btn btn-sm glass">
+                  <svg
+                    class="h-[80%] px-1"
+                    viewBox="-1.5 -1.5 18.00 18.00"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 0H4.65139L7.77735 2.08397L7.22265 2.91603L4.34861 1H1V14H6V8H4V7H9V8H7V14H14V8H12V7H14V1H10V0H15V15H0V0Z"
+                        fill="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="px-1">Скица</p>
+                </div>
+                <div class="btn btn-sm glass">
+                  <svg
+                    class="h-[80%] px-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z"
+                        stroke="#000000"
+                        stroke-width="1.248"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p class="px-1">Видео</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div id="property-custom-gallery">
+                  <button
+                    href="images/single_estate1.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate1.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate2.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate2.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate3.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate3.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate4.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate4.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate5.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate5.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate6.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate6.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate7.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate7.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate8.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate8.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate9.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate9.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate10.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate10.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate11.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate11.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate12.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate12.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                  <button
+                    href="images/single_estate13.jpg"
+                    class="w-[100%] h-[450px]"
+                  >
+                    <img
+                      class="aspect-video object-cover h-full w-full"
+                      src="images/single_estate13.jpg"
+                      alt="Shoes"
+                    />
+                  </button>
+                </div>
+                <div id="property-custom-gallery-controls"></div>
+                <div id="property-custom-gallery-controls-dots"></div>
+              </div>
+              <div class="card-body hidden">
+                <figure class="w-[100%] h-[100%]">
+                  <img
+                    class="object-cover h-full w-full"
+                    src="images/skica.png"
+                    alt="Shoes"
+                  />
+                </figure>
+              </div>
+              <div class="card-body hidden">
+                <figure class="w-[100%] h-[650px]">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/YPkU025A7t4?si=DPBbHTUA-daKW9bq"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="aspect-video object-cover h-full w-full"
+                  ></iframe>
+                </figure>
+              </div>
+            </div>
+            <div class="card glass">
+              <div class="card-body">
+                <h2 class="card-title">Удобства и екстри</h2>
+                <div class="flex flex-wrap justify-between">
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Климатик
+                  </div>
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Гараж
+                  </div>
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Затворен комплекс
+                  </div>
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Лукс
+                  </div>
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Интернет
+                  </div>
+                  <div class="flex items-center gap-4 w-[30%]">
+                    <svg
+                      style="width: 16px; height: 16px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        ></path>
+                        <path
+                          d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                    </svg>
+                    Охрана
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card glass">
+              <div class="card-body">
+                <h2 class="card-title">Описание на имота</h2>
+                <p>
+                  Титан Пропъртис има удоволствието да Ви представи двустаен
+                  апартамент в комлекс "Casa moderna", находящ се в един бързо
+                  развиващ се квартал с голям потенциал, тишина, ниско
+                  строителство, много въздух и светлина, а именно ж.к.
+                  Остромила. В близост са разположени търговски обекти, спирки
+                  на градския транспорт, както и зони за отдих.
+                </p>
+                <p>
+                  Апартаментът е ситуиран на 1-ви етаж и разполага със застроена
+                  площ от 54,05 кв.м., разгърната по следния практичен начин:
+                  антре, дневна с трапезария и кухненски бокс, спалня, баня с
+                  тоалетна, тераса. Имотът разполага и с мазе в размер на 5
+                  кв.м.
+                </p>
+                <p>
+                  Отопление: електричество. Изложение: запад. Предвидено е
+                  външните тела на климатиците да бъдат под терасата с цел
+                  нейното пълно оползотворяване. Комплексът е с лесен и красив
+                  достъп, тих и чист, предава чувство за комфорт и уют, и
+                  разполаг с богата детска площадка. Жилището се продава напълно
+                  обзаведено с всичко необходимо за едно домакинство!
+                </p>
+                <p>
+                  За оглед на това и други атрактивни предложения, не се
+                  колебайте да ни потърсите на посочения телефон или да ни
+                  изпратите данните си чрез формата за запитване на сайта.
+                </p>
+              </div>
+            </div>
+            <div class="card glass">
+              <div class="card-body">
+                <h2 class="card-title">Имоти в сградата</h2>
+                <div class="collapse collapse-arrow glass">
+                  <input type="radio" name="my-accordion-2" />
+                  <div
+                    class="collapse-title text-xl font-bold flex items-center gap-6"
+                  >
+                    <p>Ап. 1</p>
+                    <span class="badge badge-primary">свободен</span>
+                    <span class="badge badge-outline">70 m2</span>
+                    <span class="badge badge-outline">€68178</span>
+                  </div>
+                  <div class="collapse-content flex flex-col gap-6">
+                    <figure class="w-[100%]">
+                      <img
+                        class="object-cover h-full w-full"
+                        src="images/skica.png"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <h2 class="card-title">Описание на имота</h2>
+                    <p>
+                      Титан Пропъртис има удоволствието да Ви представи двустаен
+                      апартамент в комлекс "Casa moderna", находящ се в един
+                      бързо развиващ се квартал с голям потенциал, тишина, ниско
+                      строителство, много въздух и светлина, а именно ж.к.
+                      Остромила. В близост са разположени търговски обекти,
+                      спирки на градския транспорт, както и зони за отдих.
+                    </p>
+                    <p>
+                      Апартаментът е ситуиран на 1-ви етаж и разполага със
+                      застроена площ от 54,05 кв.м., разгърната по следния
+                      практичен начин: антре, дневна с трапезария и кухненски
+                      бокс, спалня, баня с тоалетна, тераса. Имотът разполага и
+                      с мазе в размер на 5 кв.м.
+                    </p>
+                    <p>
+                      Отопление: електричество. Изложение: запад. Предвидено е
+                      външните тела на климатиците да бъдат под терасата с цел
+                      нейното пълно оползотворяване. Комплексът е с лесен и
+                      красив достъп, тих и чист, предава чувство за комфорт и
+                      уют, и разполаг с богата детска площадка. Жилището се
+                      продава напълно обзаведено с всичко необходимо за едно
+                      домакинство!
+                    </p>
+                    <p>
+                      За оглед на това и други атрактивни предложения, не се
+                      колебайте да ни потърсите на посочения телефон или да ни
+                      изпратите данните си чрез формата за запитване на сайта.
+                    </p>
+                    <a class="btn btn-primary">Подробности</a>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow glass">
+                  <input type="radio" name="my-accordion-2" />
+                  <div
+                    class="collapse-title text-xl font-bold flex items-center gap-6"
+                  >
+                    <p>Ап. 2</p>
+                    <span class="badge badge-outline">продаден</span>
+                    <span class="badge badge-outline">84 m2</span>
+                    <span class="badge badge-outline">€93182</span>
+                  </div>
+                  <div class="collapse-content flex flex-col gap-6">
+                    <figure class="w-[100%]">
+                      <img
+                        class="object-cover h-full w-full"
+                        src="images/skica.png"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <h2 class="card-title">Описание на имота</h2>
+                    <p>
+                      Титан Пропъртис има удоволствието да Ви представи двустаен
+                      апартамент в комлекс "Casa moderna", находящ се в един
+                      бързо развиващ се квартал с голям потенциал, тишина, ниско
+                      строителство, много въздух и светлина, а именно ж.к.
+                      Остромила. В близост са разположени търговски обекти,
+                      спирки на градския транспорт, както и зони за отдих.
+                    </p>
+                    <p>
+                      Апартаментът е ситуиран на 1-ви етаж и разполага със
+                      застроена площ от 54,05 кв.м., разгърната по следния
+                      практичен начин: антре, дневна с трапезария и кухненски
+                      бокс, спалня, баня с тоалетна, тераса. Имотът разполага и
+                      с мазе в размер на 5 кв.м.
+                    </p>
+                    <p>
+                      Отопление: електричество. Изложение: запад. Предвидено е
+                      външните тела на климатиците да бъдат под терасата с цел
+                      нейното пълно оползотворяване. Комплексът е с лесен и
+                      красив достъп, тих и чист, предава чувство за комфорт и
+                      уют, и разполаг с богата детска площадка. Жилището се
+                      продава напълно обзаведено с всичко необходимо за едно
+                      домакинство!
+                    </p>
+                    <p>
+                      За оглед на това и други атрактивни предложения, не се
+                      колебайте да ни потърсите на посочения телефон или да ни
+                      изпратите данните си чрез формата за запитване на сайта.
+                    </p>
+                    <a class="btn btn-primary">Подробности</a>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow glass">
+                  <input type="radio" name="my-accordion-2" />
+                  <div
+                    class="collapse-title text-xl font-bold flex items-center gap-6"
+                  >
+                    <p>Ап. 3</p>
+                    <span class="badge badge-primary">свободен</span>
+                    <span class="badge badge-outline">56 m2</span>
+                    <span class="badge badge-outline">€43178</span>
+                  </div>
+                  <div class="collapse-content flex flex-col gap-6">
+                    <figure class="w-[100%]">
+                      <img
+                        class="object-cover h-full w-full"
+                        src="images/skica.png"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <h2 class="card-title">Описание на имота</h2>
+                    <p>
+                      Титан Пропъртис има удоволствието да Ви представи двустаен
+                      апартамент в комлекс "Casa moderna", находящ се в един
+                      бързо развиващ се квартал с голям потенциал, тишина, ниско
+                      строителство, много въздух и светлина, а именно ж.к.
+                      Остромила. В близост са разположени търговски обекти,
+                      спирки на градския транспорт, както и зони за отдих.
+                    </p>
+                    <p>
+                      Апартаментът е ситуиран на 1-ви етаж и разполага със
+                      застроена площ от 54,05 кв.м., разгърната по следния
+                      практичен начин: антре, дневна с трапезария и кухненски
+                      бокс, спалня, баня с тоалетна, тераса. Имотът разполага и
+                      с мазе в размер на 5 кв.м.
+                    </p>
+                    <p>
+                      Отопление: електричество. Изложение: запад. Предвидено е
+                      външните тела на климатиците да бъдат под терасата с цел
+                      нейното пълно оползотворяване. Комплексът е с лесен и
+                      красив достъп, тих и чист, предава чувство за комфорт и
+                      уют, и разполаг с богата детска площадка. Жилището се
+                      продава напълно обзаведено с всичко необходимо за едно
+                      домакинство!
+                    </p>
+                    <p>
+                      За оглед на това и други атрактивни предложения, не се
+                      колебайте да ни потърсите на посочения телефон или да ни
+                      изпратите данните си чрез формата за запитване на сайта.
+                    </p>
+                    <a class="btn btn-primary">Подробности</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card glass">
+              <div class="card-body">
+                <h2 class="card-title">Подобни имоти</h2>
+                <div class="flex items-center gap-8 flex-col xl:flex-row">
+                  <a
+                    href="single_property.html"
+                    class="card w-96 glass indicator"
+                  >
+                    <span
+                      class="indicator-item indicator-center badge badge-primary"
+                      >продажба</span
+                    >
+                    <figure class="">
+                      <img
+                        class="aspect-video object-cover"
+                        src="images/estate1.jpeg"
+                        alt="car!"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">
+                        Двустаен, продажба, Христо Смирненски
+                      </h2>
+                      <p>Христо Смирненски, Пловдив</p>
+                      <div class="card-actions justify-between items-center">
+                        <div class="badge badge-outline">&euro; 146 499</div>
+                        <div class="badge badge-outline">74 кв.м.</div>
+                        <div class="badge badge-outline">AKT 16</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="single_property.html"
+                    class="card w-96 glass indicator"
+                  >
+                    <span
+                      class="indicator-item indicator-center badge badge-primary"
+                      >продажба</span
+                    >
+                    <figure class="">
+                      <img
+                        class="aspect-video object-cover"
+                        src="images/estate2.jpg"
+                        alt="car!"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">
+                        Двустаен, продажба, Христо Смирненски
+                      </h2>
+                      <p>Христо Смирненски, Пловдив</p>
+                      <div class="card-actions justify-between items-center">
+                        <div class="badge badge-outline">&euro; 146 499</div>
+                        <div class="badge badge-outline">74 кв.м.</div>
+                        <div class="badge badge-outline">AKT 16</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="single_property.html"
+                    class="card w-96 glass indicator"
+                  >
+                    <span
+                      class="indicator-item indicator-center badge badge-primary"
+                      >продажба</span
+                    >
+                    <figure class="">
+                      <img
+                        class="aspect-video object-cover"
+                        src="images/estate3.jpg"
+                        alt="car!"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">
+                        Двустаен, продажба, Христо Смирненски
+                      </h2>
+                      <p>Христо Смирненски, Пловдив</p>
+                      <div class="card-actions justify-between items-center">
+                        <div class="badge badge-outline">&euro; 146 499</div>
+                        <div class="badge badge-outline">74 кв.м.</div>
+                        <div class="badge badge-outline">AKT 16</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 w-full xl:w-[34%]">
+            <div class="card glass">
+              <div class="card-body">
+                <h2 class="card-title">Детайли</h2>
+                <p><span class="text-gray-400">Статус:</span> Продажба</p>
+                <p><span class="text-gray-400">Тип:</span> Двустаен</p>
+                <p><span class="text-gray-400">Етаж:</span> 3</p>
+                <p><span class="text-gray-400">Общо етажи:</span> 7</p>
+                <p><span class="text-gray-400">Строителство:</span> Ново</p>
+                <p><span class="text-gray-400">Изложение:</span> Юг / Запад</p>
+              </div>
+            </div>
+            <div class="card glass">
+              <figure class="">
+                <img
+                  src="https://titanproperties.bg/media/-~194.s.png"
+                  alt="Album"
+                  class="h-[150px]"
+                />
+              </figure>
+              <div class="card-body">
+                <figure class="flex flex-col justify-between h-full">
+                  <div class="flex items-center mb-4 text-yellow-400">
+                    <svg
+                      class="w-5 h-5 me-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="w-5 h-5 me-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="w-5 h-5 me-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="w-5 h-5 me-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path
+                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                      />
+                    </svg>
+                  </div>
+                  <blockquote>
+                    <p class="text-slate-500">
+                      "Намирането на мечтания дом и превръщането му в реалност е
+                      моята мисия!"
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex items-center mt-6 space-x-3 rtl:space-x-reverse"
+                  >
+                    <div
+                      class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700"
+                    >
+                      <cite class="pe-3 font-medium text-gray-900"
+                        >Огнян Велинов</cite
+                      >
+                      <cite
+                        class="ps-3 text-sm text-gray-500 dark:text-gray-400"
+                        >Изпълнителен Директор</cite
+                      >
+                    </div>
+                  </figcaption>
+                </figure>
+                <hr class="my-4" />
+                <form class="flex flex-col gap-8 w-full">
+                  <h3 class="text-2xl w-full text-center">Свържи се с мен</h3>
+                  <label class="input input-bordered flex items-center gap-2">
+                    Име
+                    <input type="text" class="grow" placeholder="Иван" />
+                  </label>
+                  <label class="input input-bordered flex items-center gap-2">
+                    Имейл
+                    <input
+                      type="text"
+                      class="grow"
+                      placeholder="example@abv.bg"
+                    />
+                  </label>
+                  <label class="input input-bordered flex items-center gap-2">
+                    Телефон
+                    <input type="text" class="grow" placeholder="0877676887" />
+                  </label>
+                  <textarea
+                    class="textarea textarea-bordered"
+                    placeholder="Вашето запитване"
+                  ></textarea>
+                  <div class="form-control">
+                    <label class="label cursor-pointer">
+                      <span class="label-text"
+                        >Давам съгласието, личните ми данни да бъдат продадени
+                        на трети страни с цел печалба.</span
+                      >
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        class="checkbox checkbox-primary"
+                      />
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Изпрати</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+        <div
+          class="hero my-8 h-[400px]"
+          style="background-image: url(images/startjob2.jpg)"
+        >
+          <div class="hero-overlay bg-opacity-80"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-[95%]">
+              <h1 class="mb-5 text-3xl font-bold">
+                Искате да се развивате в сферата на търговията?
+              </h1>
+              <p class="mb-5">
+                Станете част от нашия екип и ни позволете да разгърнем пълния ви
+                потенциял!
+              </p>
+              <!-- Open the modal using ID.showModal() method -->
+              <a class="btn btn-primary">Кандидатсване сега!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start footer -->
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <figure><img class="h-[50px]" src="images/logo-dark.png" /></figure>
+        <p class="font-bold">
+          Титан Пропъртис ООД <br />Лидери в пазара за недвижими имоти от 2020
+        </p>
+      </aside>
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">Кариера</a>
+        <a class="link link-hover">Политика за защита на личните данни</a>
+      </nav>
+
+      <aside>
+        <p>Copyright © 2024 - Всички права запазени</p>
+      </aside>
+    </footer>
+    <!-- End footer -->
+
+    <script>
+      const galleryContainer = document.getElementById(
+        "property-custom-gallery"
+      );
+      if (galleryContainer) {
+        let currentItem = 0;
+        const galleryItems = galleryContainer.children;
+        galleryItems[currentItem].style.display = "block";
+        let galleryItemUrls = Array.from(galleryItems).map((el) =>
+          el.getAttribute("href")
+            ? el.getAttribute("href")
+            : el.getAttribute("src")
+        );
+
+        const galleryContainerControls = document.getElementById(
+          "property-custom-gallery-controls"
+        );
+        const galleryContainerControlsDots = document.getElementById(
+          "property-custom-gallery-controls-dots"
+        );
+
+        for (const imgUrl of galleryItemUrls) {
+          const imgIndex = galleryItemUrls.indexOf(imgUrl);
+          const dot = document.createElement("div");
+          dot.classList.add("property-custom-dot");
+          dot.classList.id = "dot-" + imgIndex;
+          const tempImg = document.createElement("img");
+          tempImg.src = imgUrl;
+          dot.appendChild(tempImg);
+          galleryContainerControlsDots.appendChild(dot);
+
+          dot.addEventListener("click", () => {
+            currentItem = imgIndex;
+
+            Array.from(galleryItems).forEach((galItem, i) => {
+              if (i !== imgIndex) {
+                galItem.style.display = "none";
+              } else {
+                galItem.style.display = "block";
+              }
+            });
+          });
+        }
+
+        const nextButton = document.createElement("div");
+        nextButton.classList.add("property-custom-next");
+        nextButton.innerHTML = '<a href="#slide2" class="btn btn-circle">❯</a>';
+        nextButton.addEventListener("click", () => {
+          galleryItems[currentItem].style.display = "none";
+          currentItem =
+            currentItem + 1 >= galleryItems.length ? 0 : currentItem + 1;
+          galleryItems[currentItem].style.display = "block";
+        });
+
+        const prevButton = document.createElement("div");
+        prevButton.classList.add("property-custom-prev");
+        prevButton.innerHTML = '<a href="#slide4" class="btn btn-circle">❮</a>';
+        prevButton.addEventListener("click", () => {
+          galleryItems[currentItem].style.display = "none";
+          currentItem =
+            currentItem - 1 < 0 ? galleryItems.length - 1 : currentItem - 1;
+          galleryItems[currentItem].style.display = "block";
+        });
+
+        galleryContainerControls.appendChild(prevButton);
+        galleryContainerControls.appendChild(nextButton);
+
+        const controlsHeigth = galleryContainer.getBoundingClientRect().height;
+
+        nextButton.style.transform = `translateY(-${
+          controlsHeigth / 2 + 48
+        }px)`;
+        prevButton.style.transform = `translateY(-${
+          controlsHeigth / 2 + 48
+        }px)`;
+      }
+
+      let galleryTabs = document.getElementById("galleryTabs");
+      let gallerySwitchButtons = galleryTabs.querySelectorAll(
+        ".galleryTabsControls > div"
+      );
+      let galleryAllContentTabs = galleryTabs.querySelectorAll(".card-body");
+
+      gallerySwitchButtons.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          console.log("click", btn);
+          galleryAllContentTabs.forEach((e, ii) => {
+            if (i !== ii && !e.classList.contains("hidden")) {
+              e.classList.add("hidden");
+            }
+          });
+
+          galleryAllContentTabs[i].classList.remove("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

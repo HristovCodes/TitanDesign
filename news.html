@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme">
+  <head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8" />
+    <title>Titan Properties Real Estate</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--=============== css  ===============-->
+    <link href="daisy/full.css" rel="stylesheet" type="text/css" />
+    <script src="daisy/tailwind.js"></script>
+  </head>
+
+  <body>
+    <!-- Start nav bar -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a onclick="my_modal_33.showModal()">Закупуване на имот</a></li>
+            <li><a onclick="my_modal_33.showModal()">Наемане на имот</a></li>
+            <li><a onclick="my_modal_33.showModal()">Нови сгради</a></li>
+            <li><a href="aboutus.html">За нас</a></li>
+            <li><a href="news.html">Статии</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="career.html">Кариера при нас</a></li>
+            <li>
+              <label class="label cursor-pointer">
+                <span class="label-text">BG</span>
+                <input type="checkbox" class="toggle" checked />
+                <span class="label-text">EN</span>
+              </label>
+              <a class="btn btn-primary" href="ocenka.html">Оценка на имот</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl" href="index.html"
+          ><img class="h-full" src="images/logo-dark.png"
+        /></a>
+      </div>
+      <div class="navbar-center hidden xl:flex z-10">
+        <ul class="menu menu-horizontal px-1">
+          <li><a onclick="my_modal_33.showModal()">Закупуване</a></li>
+          <li><a onclick="my_modal_33.showModal()">Наемане</a></li>
+          <li><a onclick="my_modal_33.showModal()">Нови сгради</a></li>
+          <li><a href="aboutus.html">За нас</a></li>
+          <li><a href="news.html">Статии</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="career.html">Кариера при нас</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden xl:flex">
+        <div class="dropdown">
+          <div class="dropdown dropdown-end mr-4">
+            <div tabindex="0" role="button" class="btn btn-ghost rounded-btn">
+              BG
+            </div>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+            >
+              <li><a>BG</a></li>
+              <li><a>EN</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="ocenka.html" class="btn btn-primary">Оценка на имот</a>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_33" class="modal modal-bottom sm:modal-middle">
+          <div
+            class="modal-box bg-base-100 text-accent w-full max-w-7xl lg:w-11/12"
+          >
+            <form method="dialog">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
+                ✕
+              </button>
+            </form>
+            <h3 class="font-bold text-lg text-center">Имоти за продажба</h3>
+            <p class="py-4 text-center"></p>
+            <form class="flex flex-col gap-8" action="search_properties.html">
+              <div class="join flex-col lg:flex-row justify-center">
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Едностаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Двустаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  checked
+                  aria-label="Тристаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Многостаен"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Мезонет"
+                />
+                <input
+                  class="join-item btn"
+                  type="radio"
+                  name="options"
+                  aria-label="Всички"
+                />
+              </div>
+              <div class="flex flex-wrap justify-between gap-4">
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full xl:max-w-lg"
+                >
+                  Цена от
+                  <input type="text" class="grow" placeholder="0" />
+                </label>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full xl:max-w-lg"
+                >
+                  Цена до
+                  <input type="text" class="grow" placeholder="320000" />
+                </label>
+                <div class="dropdown w-full xl:max-w-lg">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn bg-transparent border input-bordered font-normal w-full xl:max-w-lg flex justify-between"
+                  >
+                    Град<svg
+                      width="12px"
+                      height="12px"
+                      class="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2048 2048"
+                    >
+                      <path
+                        d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full xl:max-w-lg"
+                  >
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                          />
+                          <span class="label-text">София</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                          />
+                          <span class="label-text">Бургас</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="radio"
+                            name="radio-10"
+                            class="radio mr-2"
+                            checked
+                          />
+                          <span class="label-text">Варна</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown w-full xl:max-w-lg">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn bg-transparent border input-bordered font-normal w-full xl:max-w-lg flex justify-between"
+                  >
+                    Район<svg
+                      width="12px"
+                      height="12px"
+                      class="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2048 2048"
+                    >
+                      <path
+                        d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-full xl:max-w-lg"
+                  >
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            class="checkbox mr-2"
+                          />
+                          <span class="label-text">Младост</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input type="checkbox" class="checkbox mr-2" />
+                          <span class="label-text">Дианабад</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-control">
+                        <label class="label cursor-pointer">
+                          <input type="checkbox" class="checkbox mr-2" />
+                          <span class="label-text">Изток</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full"
+                >
+                  Референтен номер
+                  <input type="text" class="grow" placeholder="2134016" />
+                </label>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Луксозен</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Гараж</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Паркомясто</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Домашни любимци</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Тераса</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">СОТ</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Интернет</span>
+                  </label>
+                </div>
+                <div
+                  class="border input-bordered px-3 form-control w-full sm:max-w-[30%] lg:max-w-[20%]"
+                >
+                  <label class="label cursor-pointer">
+                    <input type="checkbox" checked="checked" class="checkbox" />
+                    <span class="label-text">Затворен комплекс</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <label class="label cursor-pointer">
+                  <span class="label-text"
+                    >Получаване на предложения за съответното търсене.</span
+                  >
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-primary"
+                  />
+                </label>
+                <label
+                  class="input input-bordered flex items-center gap-2 w-full"
+                >
+                  Email
+                  <input
+                    type="email"
+                    class="grow"
+                    placeholder="example@abv.bg"
+                  />
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Tърсене</button>
+            </form>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+      </div>
+    </div>
+    <!-- End nav bar -->
+
+    <div class="flex flex-col items-center">
+      <div class="flex flex-col w-[85%] my-8 xl:w-[70%]">
+        <div class="m-8">
+          <h2 class="text-3xl">Новини - Общо 342</h2>
+          <h3 class="text-xl">Научете повече за пазара на недвижимите имоти</h3>
+          <div class="text-sm breadcrumbs">
+            <ul>
+              <li><a>Начало</a></li>
+              <li>Новини</li>
+            </ul>
+          </div>
+          <!-- <p>Показване на 1–30 от 342 имоти</p> -->
+        </div>
+        <div class="flex flex-row justify-evenly flex-wrap gap-8">
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news1.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Инвестиций във ваканционни имоти</h2>
+              <p>
+                Всички се питат в какво да инвестират, но никой къде, дали към
+                курортите не са отговора на лесните инвестиций?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news2.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Нужна ли ни е кола за огледи</h2>
+              <p>
+                Някой от брокерите ни смятат, че отговорът е да, а пък други си
+                се движат без кола от години.
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news3.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Свадба срещу имот</h2>
+              <p>
+                Да си купим имот и жената да изчака или да направим свадбата на
+                мечтите й?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news1.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Инвестиций във ваканционни имоти</h2>
+              <p>
+                Всички се питат в какво да инвестират, но никой къде, дали към
+                курортите не са отговора на лесните инвестиций?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news2.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Нужна ли ни е кола за огледи</h2>
+              <p>
+                Някой от брокерите ни смятат, че отговорът е да, а пък други си
+                се движат без кола от години.
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news3.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Свадба срещу имот</h2>
+              <p>
+                Да си купим имот и жената да изчака или да направим свадбата на
+                мечтите й?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news1.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Инвестиций във ваканционни имоти</h2>
+              <p>
+                Всички се питат в какво да инвестират, но никой къде, дали към
+                курортите не са отговора на лесните инвестиций?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news2.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Нужна ли ни е кола за огледи</h2>
+              <p>
+                Някой от брокерите ни смятат, че отговорът е да, а пък други си
+                се движат без кола от години.
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news3.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Свадба срещу имот</h2>
+              <p>
+                Да си купим имот и жената да изчака или да направим свадбата на
+                мечтите й?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news1.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Инвестиций във ваканционни имоти</h2>
+              <p>
+                Всички се питат в какво да инвестират, но никой къде, дали към
+                курортите не са отговора на лесните инвестиций?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news2.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Нужна ли ни е кола за огледи</h2>
+              <p>
+                Някой от брокерите ни смятат, че отговорът е да, а пък други си
+                се движат без кола от години.
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 glass indicator">
+            <div class="absolute text-xs p-2 alert top-44 left-2 w-fit block">
+              <p>
+                <span class="">30 Май, 2024</span>
+              </p>
+            </div>
+            <figure>
+              <img
+                class="aspect-video object-cover"
+                src="images/news3.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Свадба срещу имот</h2>
+              <p>
+                Да си купим имот и жената да изчака или да направим свадбата на
+                мечтите й?
+              </p>
+              <div class="card-actions justify-end">
+                <a class="btn btn-primary" href="snews.html">Прочети още</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="join self-center mt-4">
+          <button class="join-item btn">«</button>
+          <button class="join-item btn">Страница 22</button>
+          <button class="join-item btn">»</button>
+        </div>
+        <p class="text-center mt-4">Показване на 1–30 от 342 новини</p>
+      </div>
+      <div class="w-full">
+        <div
+          class="hero my-8 h-[400px]"
+          style="background-image: url(images/startjob2.jpg)"
+        >
+          <div class="hero-overlay bg-opacity-80"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-[95%]">
+              <h1 class="mb-5 text-3xl font-bold">
+                Искате да се развивате в сферата на търговията?
+              </h1>
+              <p class="mb-5">
+                Станете част от нашия екип и ни позволете да разгърнем пълния ви
+                потенциял!
+              </p>
+              <!-- Open the modal using ID.showModal() method -->
+              <a class="btn btn-primary">Кандидатсване сега!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start footer -->
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <figure><img class="h-[50px]" src="images/logo-dark.png" /></figure>
+        <p class="font-bold">
+          Титан Пропъртис ООД <br />Лидери в пазара за недвижими имоти от 2020
+        </p>
+      </aside>
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">Кариера</a>
+        <a class="link link-hover">Политика за защита на личните данни</a>
+      </nav>
+
+      <aside>
+        <p>Copyright © 2024 - Всички права запазени</p>
+      </aside>
+    </footer>
+    <!-- End footer -->
+  </body>
+</html>
