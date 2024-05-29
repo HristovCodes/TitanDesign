@@ -73,9 +73,9 @@
           /></a>
           <div class="navbar-center z-10 hidden xl:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a href="search_properties.html">Закупуване</a></li>
-              <li><a href="search_properties.html">Наемане</a></li>
-              <li><a href="search_properties.html">Нови сгради</a></li>
+              <li><a href="search_properties.html">Наеми</a></li>
+              <li><a href="search_properties.html">Продажби</a></li>
+              <li><a href="search_properties.html">Сгради</a></li>
               <li><a href="aboutus.html">За нас</a></li>
               <li><a href="news.html">Статии</a></li>
               <li><a href="contacts.html">Контакти</a></li>
@@ -102,7 +102,7 @@
                 </ul>
               </div>
             </div>
-            <a href="ocenka.html" class="btn btn-primary">Оценка на имот</a>
+            <a href="ocenka.html" class="btn btn-primary">Оцени имота ми</a>
             <!-- Open the modal using ID.showModal() method -->
             <dialog id="my_modal_33" class="modal modal-bottom sm:modal-middle">
               <div
@@ -461,8 +461,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a href="#slide4" class="hidden xl:inline-flex btn btn-circle"
+                >❮</a
+              >
+              <a href="#slide2" class="hidden xl:inline-flex btn btn-circle"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
@@ -501,8 +505,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
+              <a href="#slide1" class="hidden xl:inline-flex btn btn-circle"
+                >❮</a
+              >
+              <a href="#slide3" class="hidden xl:inline-flex btn btn-circle"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
@@ -541,8 +549,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a href="#slide2" class="hidden xl:inline-flex btn btn-circle"
+                >❮</a
+              >
+              <a href="#slide4" class="hidden xl:inline-flex btn btn-circle"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
@@ -581,8 +593,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
+              <a href="#slide3" class="hidden xl:inline-flex btn btn-circle"
+                >❮</a
+              >
+              <a href="#slide1" class="hidden xl:inline-flex btn btn-circle"
+                >❯</a
+              >
             </div>
           </div>
         </div>
@@ -1059,16 +1075,18 @@
               <div class="timeline-end timeline-box">2024</div>
             </li>
           </ul>
-          <div class="w-full mt-8 h-[500px] flex flex-col lg:flex-row">
+          <div
+            class="w-full mt-8 h-fit xl:h-[500px] flex flex-col flex-wrap lg:flex-row"
+          >
             <div
-              class="w-[25%] bg-primary text-center text-neutral-content flex items-center"
+              class="w-full xl:w-[25%] min-h-[200px] bg-primary text-center text-neutral-content flex items-center"
             >
-              <h1 class="text-5xl font-bold mx-8">
+              <h1 class="text-2xl xl:text-5xl font-bold mx-8">
                 Titan Properties е в най-големите градове в България
               </h1>
             </div>
             <div
-              class="w-[25%] relative"
+              class="w-full min-h-[200px] xl:w-[25%] relative bg-cover"
               style="background-image: url(images/titansofia.jpg)"
             >
               <div class="hero-overlay bg-opacity-80"></div>
@@ -1080,7 +1098,7 @@
               </div>
             </div>
             <div
-              class="w-[25%] relative"
+              class="w-full min-h-[200px] xl:w-[25%] relative bg-cover"
               style="background-image: url(images/titanplovdiv.jpg)"
             >
               <div class="hero-overlay bg-opacity-80"></div>
@@ -1092,7 +1110,7 @@
               </div>
             </div>
             <div
-              class="w-[25%] relative"
+              class="w-full min-h-[200px] xl:w-[25%] relative bg-cover"
               style="background-image: url(images/titanvarna.jpg)"
             >
               <div class="hero-overlay bg-opacity-80"></div>
@@ -1287,7 +1305,9 @@
                 потенциял!
               </p>
               <!-- Open the modal using ID.showModal() method -->
-              <a class="btn btn-primary">Кандидатсване сега!</a>
+              <a class="btn btn-primary" href="career.html"
+                >Кандидатсване сега!</a
+              >
             </div>
           </div>
         </div>
