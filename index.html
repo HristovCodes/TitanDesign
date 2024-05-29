@@ -44,7 +44,7 @@
         <!-- Start nav bar -->
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <div class="flex-none lg:hidden">
+            <div class="flex-none xl:hidden">
               <label
                 for="my-drawer-3"
                 aria-label="open sidebar"
@@ -65,12 +65,15 @@
                 </svg>
               </label>
             </div>
-            <a class="btn btn-ghost text-xl" href="index.html"
+            <a class="btn btn-ghost text-xl hidden xl:flex" href="index.html"
               ><img class="h-full" src="images/logo-dark.png"
             /></a>
           </div>
-          <div class="navbar-center hidden xl:flex z-10">
-            <ul class="menu menu-horizontal px-1">
+          <div class="navbar-center z-10">
+            <a class="btn btn-ghost text-xl block xl:hidden" href="index.html"
+              ><img class="h-full" src="images/logo-dark.png"
+            /></a>
+            <ul class="menu menu-horizontal px-1 hidden xl:flex">
               <li><a href="search_properties.html">Закупуване</a></li>
               <li><a href="search_properties.html">Наемане</a></li>
               <li><a href="search_properties.html">Нови сгради</a></li>
@@ -81,8 +84,8 @@
               <li><a href="videos.html">Видеа</a></li>
             </ul>
           </div>
-          <div class="navbar-end hidden xl:flex">
-            <div class="dropdown">
+          <div class="navbar-end">
+            <div class="dropdown hidden xl:flex">
               <div class="dropdown dropdown-end mr-4">
                 <div
                   tabindex="0"
